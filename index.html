@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 5px solid whitesmoke;
+            width: 550px;
+            height: 300px;
+            border-radius: 30px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 450px;
+            margin-top: 180px;
+            background-color: rgb(15, 28, 28);
+            background-image: url("/public/images/tourist-3.png");
+        }
+    </style>
+</head>
+<body>
+    <div id="otp">
+        <h1 style="color: aliceblue;">OTP GENERATOR</h1><br><br>
+        <!-- <h3>Enter your MobileNumber:</h3> -->
+        <button id="btn1" style="background-color: rgb(145, 20, 20); color: white;">Generate OTP</button>
+        <button id="btn2" style="background-color: rgb(97, 97, 212); color: white ;width:70px">OTP</button><br><br>
+        <button id="btn3" style="background-color: rgb(74, 184, 74);color: white;">Submit</button>
+    </div>
+    <script>
+        div1=document.getElementById("otp")
+        btn1=document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+              btn2.innerHTML=Math.floor(Math.random()*9999);
+            if(btn2.length<4)
+            btn2.innerHTML=Math.floor(math.random()*9999);
+         }
+        );
+        btn3=document.getElementById("btn3")
+        btn3.addEventListener("click",()=>{
+            btn2.innerHTML="OTP";
+        })
+    
+    </script>
+</body>
+</html>
